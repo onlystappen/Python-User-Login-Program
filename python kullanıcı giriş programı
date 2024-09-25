@@ -1,0 +1,30 @@
+print ( "***** Kullanıcı girişi programı***** ")
+
+hak = 3
+
+sys_ad = "arda"
+sys_parola = "1234"
+
+while True:
+    a =input("Kullanıcı adınızı giriniz:")
+    b= input("Şifrenizi giriniz:")
+ 
+    if (a != sys_ad and b == sys_parola):
+        print("Kullanıcı adı hatalı tekrar deneyiniz")
+        hak -=1
+    elif (a == sys_ad and b != sys_parola):
+        print("Şifre hatalı tekrar deneyiniz")
+        hak -=1
+    elif (a != sys_ad and b != sys_parola):
+        print("Kullanıcı adı ve parola hatalı tekrar deneyiniz")
+        hak -=1
+    
+    else:
+        print("Başarıyla oturum açıldı\nMerhaba Arda")
+        break
+    if (hak == 0):
+        print("Giriş hakkınız kalmadı daha sonra tekrar deneyiniz...")
+        break
+    
+    
+        
