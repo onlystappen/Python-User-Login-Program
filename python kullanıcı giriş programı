@@ -23,7 +23,7 @@ while True:
         print("Logged in successfully\nHello Arda")
         break
     if (count == 0):
-        print("You have no more entry tries.Try again later...")
+        print("You have no more login attempts.Try again later...")
         break
     
     
