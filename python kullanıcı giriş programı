@@ -1,29 +1,29 @@
-print ( "***** Kullanıcı girişi programı***** ")
+print ( "***** System Enter Program ***** ")
 
-hak = 3
+count = 3
 
-sys_ad = "arda"
-sys_parola = "1234"
+name = "arda"
+password = "1234"
 
 while True:
-    a =input("Kullanıcı adınızı giriniz:")
-    b= input("Şifrenizi giriniz:")
+    a =input("Enter your nickname:")
+    b= input("Enter your password:")
  
-    if (a != sys_ad and b == sys_parola):
-        print("Kullanıcı adı hatalı tekrar deneyiniz")
-        hak -=1
-    elif (a == sys_ad and b != sys_parola):
-        print("Şifre hatalı tekrar deneyiniz")
-        hak -=1
-    elif (a != sys_ad and b != sys_parola):
-        print("Kullanıcı adı ve parola hatalı tekrar deneyiniz")
-        hak -=1
+    if (a != name and b == password):
+        print("Nickname is wrong,try again...")
+        count -=1
+    elif (a == name and b != password):
+        print("Password is wrong.Try again...")
+        count -=1
+    elif (a != name and b != password):
+        print("Nickname and password are wrong,try again...")
+        count-=1
     
     else:
-        print("Başarıyla oturum açıldı\nMerhaba Arda")
+        print("System opened successfully\nHello Arda")
         break
-    if (hak == 0):
-        print("Giriş hakkınız kalmadı daha sonra tekrar deneyiniz...")
+    if (count == 0):
+        print("You have no more entry tries.Try again later...")
         break
     
     
